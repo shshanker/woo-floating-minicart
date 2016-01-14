@@ -1,11 +1,11 @@
 <?php
 /*
  * Plugin Name:       Woo Floating Minicart 
- * Plugin URI:        https://bitbucket.org/shivawen/woo-floating-minicart/
+ * Plugin URI:        https://github.com/shshanker/woo-floating-minicart
  * Description:       Woo floating minicart plugin for WooCommerce.
  * Version:           1.0.0
  * Author:            Sh Shanker, RiteshShakya
- * Author URI:        https://bitbucket.org/shivawen/woo-floating-minicart/
+ * Author URI:        https://github.com/shshanker
  * Text Domain:       woo-floating-minicart
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
