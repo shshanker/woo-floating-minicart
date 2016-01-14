@@ -35,7 +35,7 @@ Contribution link: https://github.com/shshanker/woo-floating-minicart
 * Download to your plugin directory or simply install via WordPress admin interface.
 * Activate.
 * No Admin Setup is needed.
-* Use.
+* Use it.
 
 == Frequently Asked Questions ==
 Q: What is minicart?
