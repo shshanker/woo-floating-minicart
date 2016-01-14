@@ -1,0 +1,64 @@
+﻿=== Woo Floating Minicart ===
+Contributors: Sh Shanker, RiteshShakya
+Donate link: https://bitbucket.org/shivawen/woo-floating-minicart/
+Tags: woo floating minicart, woocommerce, minicart, cart, floating, woocommerce addons, products
+Requires at least: 3.0.1
+Tested up to: 4.4.1
+Stable tag: 4.3
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Woo Floating Minicart – is the plugin that facilates WooCommerce customer to enable floting mincart menu on your site.
+
+
+== Description ==
+
+Woo Floating Minicart – is the plugin that facilates WooCommerce customer to enable floting mincart menu on your site. 
+
+Contribution link: https://bitbucket.org/shivawen/woo-floating-minicart/
+
+
+
+### The Plugin Features:
+
+* Minicart - enables woocommerce mincart option for customer about their cart items, total price, number of products, tax status, etc.
+
+* Floating - enables floting minicart on fixed left side of your site.
+
+* Responsive - tested on mobile browsers
+
+* Notifications - product counts on Woo Floating Minicart decorated as notifications so that customer could simply notice variance on cart items.  
+
+
+
+== Installation ==
+* Download to your plugin directory or simply install via WordPress admin interface.
+* Activate.
+* No Admin Setup is needed.
+* Use.
+
+== Frequently Asked Questions ==
+Q: What is minicart?
+A: This a small section (menu, dropdown, widget, etc ) from where you can overview your cart items, prices, tax status, etc.
+
+Q: What is floating minicart?
+A: A fixed minicart section which floats around a site while scrolling, redirecting, etc
+
+
+== Screenshots ==
+1. Woo Floating Minicart on collapsed state
+2. Woo Floating Minicart on expanded state
+
+
+== License ==
+
+GPLv2 or later
+http://www.gnu.org/licenses/gpl-2.0.html
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the [GNU General Public License][] as published by the Free
+Software Foundation; either version 2 of the License, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY. See the GNU General Public License for more details. 
