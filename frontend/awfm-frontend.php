@@ -33,37 +33,18 @@ class Woo_floating_minicart_frontend {
 		add_action( 'wp_enqueue_scripts', array( $this, 'woo_floating_minicart_scripts' ));
 		
 		// Actions
-		add_action( 'wp_head', array( $this, 'woo_floating_minicart' ));
-		add_action( 'wp_loaded', array( $this, 'woo_floating_minicart_wp_loaded' ));
+		add_action( 'wp_head', array( $this, 'woo_floating_minicart' ));		
 
 		// Filters 
 		add_filter('add_to_cart_fragments', array( $this, 'woo_floating_minicart_add_to_cart_fragment'));
 
 	}
 
-	public function woo_floating_minicart_wp_loaded(){
-		/*$cart = new WC_Cart;
-		$empty_cart_status = false;
-		
-		if( method_exists($cart, 'is_empty') ){
-			
-			if( WC()->cart->is_empty() ){
-
-				$empty_cart_status = true;
-			}
-
-		} else {
-			
-			global $woocommerce;			
-			if( sizeof( $woocommerce->cart->cart_contents ) == 0 ){
-
-				$empty_cart_status = true;		
-			}
-			
-
-		}*/
-	}
-
+	/**
+	 * Loading scripts.
+	 *
+	 * @return void
+	 */
 
 	public function woo_floating_minicart_scripts(){
 
@@ -81,27 +62,31 @@ class Woo_floating_minicart_frontend {
 	} // end of woo_floating_minicart_scripts
 
 	
+	/**
+	 * Loading minicart option on wp_head section.
+	 *
+	 * @return void
+	 */
 
 	public function woo_floating_minicart(){
 
 		if( !( is_cart() || is_checkout()) ){
 
-		echo "<div class='awfm-warp-content'>";
-			$this->awfm_woocommerce_mini_cart();
-		echo "</div>";
+			echo "<div class='awfm-warp-content'>";
+				$this->awfm_woocommerce_mini_cart();
+			echo "</div>";
 
-	}
-
-	}
-
-	public function woo_floating_minicart_function(){
-
-		 $clicked = $_POST['clicked'];
-		 
 		}
-		// end of ajax callback function
+
+	}
 
 
+	/**
+	 * Handling WooCommerce ajax on cart items update .
+	 *
+	 * @param  obj $fragments WooCommerce.
+	 * @return obj
+	 */
 	public function woo_floating_minicart_add_to_cart_fragment( $fragments ) {
 			
 			ob_start();
@@ -116,7 +101,15 @@ class Woo_floating_minicart_frontend {
 
 			}
 			
-			
+	
+
+	/**
+	 * Initiating WooCommerce minicart function .
+	 *
+	 * @return void
+	 */
+
+
 	public function awfm_woocommerce_mini_cart(){
 		
 
@@ -174,7 +167,7 @@ class Woo_floating_minicart_frontend {
 			
 			<?php //if ( ! WC()->cart->is_empty() )  ?>
 			<?php if ( $empty_cart_status == false )  ?>
-			<p class="cart-items"><?php echo sprintf(_n('%d product in the cart.', '%d products in the cart.', WC()->cart->cart_contents_count, 'woothemes'), WC()->cart->cart_contents_count); ?></p>
+			<p class="cart-items"><?php echo sprintf(_n('%d product in the cart.', '%d products in the cart.', WC()->cart->cart_contents_count, 'woo-floating-minicart'), WC()->cart->cart_contents_count); ?></p>
 			
 			<ul class="cart_list product_list_widget <?php echo $args['list_class']; ?>">
 								
@@ -214,7 +207,7 @@ class Woo_floating_minicart_frontend {
 											echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 												'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
 												esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
-												__( 'Remove this item', 'woocommerce' ),
+												__( 'Remove this item', 'woo-floating-minicart' ),
 												esc_attr( $product_id ),
 												esc_attr( $_product->get_sku() )
 											), $cart_item_key );
@@ -230,7 +223,7 @@ class Woo_floating_minicart_frontend {
 				
 				<?php else : ?>
 
-					<li class="empty"><?php _e( 'No products in the cart.', 'woocommerce' ); ?></li>
+					<li class="empty"><?php _e( 'No products in the cart.', 'woo-floating-minicart' ); ?></li>
 
 				<?php endif; ?>
 
@@ -243,13 +236,13 @@ class Woo_floating_minicart_frontend {
 				<div id="woo-floating-minicart-base">
 					
 				
-					<p class="total"><strong><?php _e( 'Subtotal', 'woocommerce' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
+					<p class="total"><strong><?php _e( 'Subtotal', 'woo-floating-minicart' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
 
 					<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 
 					<p class="buttons">
-						<a href="<?php echo WC()->cart->get_cart_url(); ?>" class="button wc-forward"><?php _e( 'Cart', 'woocommerce' ); ?></a>
-						<a href="<?php echo WC()->cart->get_checkout_url(); ?>" class="button checkout wc-forward"><?php _e( 'Checkout', 'woocommerce' ); ?></a>
+						<a href="<?php echo WC()->cart->get_cart_url(); ?>" class="button wc-forward"><?php _e( 'Cart', 'woo-floating-minicart' ); ?></a>
+						<a href="<?php echo WC()->cart->get_checkout_url(); ?>" class="button checkout wc-forward"><?php _e( 'Checkout', 'woo-floating-minicart' ); ?></a>
 					</p>
 
 				</div> <!-- end woo-floating-minicart-base -->

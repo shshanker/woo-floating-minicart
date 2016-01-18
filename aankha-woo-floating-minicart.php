@@ -78,7 +78,7 @@ if ( ! class_exists( 'Woo_Floating_Minicart' ) ) :
 		 * @return string
 		 */
 		public function awfm_woocommerce_missing_notice() {
-			echo '<div class="error"><p>' . sprintf( __( 'Woocommerce Floating Minicart says "There must be active install of %s to take a flight!"', 'woocommerce-assistive-menu' ), '<a href="http://www.woothemes.com/woocommerce/" target="_blank">' . __( 'WooCommerce', 'woocommerce-assistive-menu' ) . '</a>' ) . '</p></div>';
+			echo '<div class="error"><p>' . sprintf( __( 'Woocommerce Floating Minicart says "There must be active install of %s to take a flight!"', 'woo-floating-minicart' ), '<a href="http://www.woothemes.com/woocommerce/" target="_blank">' . __( 'WooCommerce', 'woocommerce-assistive-menu' ) . '</a>' ) . '</p></div>';
 			if ( isset( $_GET['activate'] ) )
                  unset( $_GET['activate'] );	
 		}
