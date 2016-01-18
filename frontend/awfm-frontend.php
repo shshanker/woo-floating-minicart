@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * Woocommerce Floating Minicart
+ * Woo Floating Minicart
  *
  * Allows user to get woocommerce floating minicart.
  *
@@ -48,13 +48,13 @@ class Woo_floating_minicart_frontend {
 
 	public function woo_floating_minicart_scripts(){
 
-		wp_register_script( 'woo-floating-minicart-script', plugins_url( 'woo-floating-minicart/js/awfm-scripts.js' ));
+		wp_register_script( 'woo-floating-minicart-script', plugins_url( 'woo-floating-minicart/js/awfm-scripts.js' ), array('jquery') );
 		wp_enqueue_script( 'woo-floating-minicart-script' );
 
 		wp_register_style( 'woo-floating-minicart-style', plugins_url( 'woo-floating-minicart/css/awfm-style.css' ) );
 		wp_enqueue_style( 'woo-floating-minicart-style' );
 
-		wp_register_script( 'woo-floating-minicart-malihu-script', plugins_url( 'woo-floating-minicart/lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js' ));		
+		wp_register_script( 'woo-floating-minicart-malihu-script', plugins_url( 'woo-floating-minicart/lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js' ), array('jquery'));		
 		wp_enqueue_script( 'woo-floating-minicart-malihu-script' );
 
 		wp_register_style( 'woo-floating-minicart-malihu-style', plugins_url( 'woo-floating-minicart/lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css' ) );
@@ -85,6 +85,7 @@ class Woo_floating_minicart_frontend {
 	 * Handling WooCommerce ajax on cart items update .
 	 *
 	 * @param  obj $fragments WooCommerce.
+	 *
 	 * @return obj
 	 */
 	public function woo_floating_minicart_add_to_cart_fragment( $fragments ) {
@@ -150,7 +151,7 @@ class Woo_floating_minicart_frontend {
 			
 			<div id="woo-floating-minicart-icon">
 				<?php 
-				//if ( ! WC()->cart->is_empty() ) :
+				
 				if ( $empty_cart_status == false ) :
 
 					echo "<span class='cart_contents_count'>";
@@ -165,17 +166,13 @@ class Woo_floating_minicart_frontend {
 			
 			<?php do_action( 'woocommerce_before_mini_cart' ); ?>
 			
-			<?php //if ( ! WC()->cart->is_empty() )  ?>
-			<?php if ( $empty_cart_status == false )  ?>
+			
+			<?php if ( $empty_cart_status == false ):  ?>
 			<p class="cart-items"><?php echo sprintf(_n('%d product in the cart.', '%d products in the cart.', WC()->cart->cart_contents_count, 'woo-floating-minicart'), WC()->cart->cart_contents_count); ?></p>
 			
 			<ul class="cart_list product_list_widget <?php echo $args['list_class']; ?>">
+			
 								
-
-
-				<?php //if ( ! WC()->cart->is_empty() ) : ?>
-				<?php if ( $empty_cart_status == false ) : ?>
-				
 
 					<?php
 						foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
@@ -220,16 +217,13 @@ class Woo_floating_minicart_frontend {
 							}
 						}
 					?>
+			</ul><!-- end product list -->
 				
 				<?php else : ?>
+					<p class="cart-items"><?php _e( 'No products in the cart.', 'woo-floating-minicart' ); ?></p>
+			
+			<?php endif; ?>
 
-					<li class="empty"><?php _e( 'No products in the cart.', 'woo-floating-minicart' ); ?></li>
-
-				<?php endif; ?>
-
-			</ul><!-- end product list -->
-
-			<?php //if ( ! WC()->cart->is_empty() ) : ?>
 			
 			<?php if ( $empty_cart_status == false ) : ?>
 
