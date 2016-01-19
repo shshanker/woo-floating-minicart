@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Woo Floating Minicart
  *
- * Allows user to get woocommerce floating minicart.
+ * Allows user to get WooCommerce Floating Minicart.
  *
  * @class   Woo_floating_minicart_frontend 
  */
