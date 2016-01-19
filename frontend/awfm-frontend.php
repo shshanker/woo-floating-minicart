@@ -118,7 +118,7 @@ class Woo_floating_minicart_frontend {
 			
 			$empty_cart_status = false;
 			
-			// For WooCommerce new versions
+			// For WooCommerce newer versions
 			if( method_exists($cart, 'is_empty') ){
 				
 				if( WC()->cart->is_empty() ){
@@ -146,8 +146,6 @@ class Woo_floating_minicart_frontend {
 			<div id="woo-floating-minicart" class="woo-floating-minicart" style="">
 			
 			<div id="woo-floating-minicart-wrapper">
-				
-
 			
 			<div id="woo-floating-minicart-icon">
 				<?php 
