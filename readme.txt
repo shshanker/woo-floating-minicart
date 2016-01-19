@@ -8,12 +8,12 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Woo Floating Minicart – is the plugin that facilates WooCommerce customer to enable floting mincart menu on your site.
+Woo Floating Minicart – is the plugin that facilates WooCommerce customer to enable floating mincart menu on your site.
 
 
 == Description ==
 
-Woo Floating Minicart – is the plugin that facilates WooCommerce customer to enable floting mincart menu on your site. 
+Woo Floating Minicart – is the plugin that facilates WooCommerce customer to enable floating mincart menu on your site. 
 
 Contribution link: https://github.com/shshanker/woo-floating-minicart
 
