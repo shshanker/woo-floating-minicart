@@ -160,7 +160,7 @@ class Woo_floating_minicart_frontend {
 
 				endif;
 				?>		
-				<span class="cart-icon"><img src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'images/basket.png'; ?>" title="WooCommerce Floating Cart" alt="WooCommerce Floating Cart" width="32" height="32" /></span>
+				<span class="cart-icon"><img src="<?php echo plugin_dir_url( dirname( __FILE__ ) ) . 'images/basketg.png'; ?>" title="WooCommerce Floating Cart" alt="WooCommerce Floating Cart" width="32" height="32" /></span>
 			</div><!-- END .woo-floating-minicart-inactive -->
 			
 			
