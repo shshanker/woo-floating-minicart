@@ -2,7 +2,6 @@
  * aankha-woo-assitive-menu.js
  *
  * Woocommerce assitive menu.
- *
  * 
  */
 jQuery(document).ready( function($) {
