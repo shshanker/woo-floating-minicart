@@ -45,10 +45,6 @@ Q: What is floating minicart?
 A: A fixed minicart section which floats around a site while scrolling, redirecting, etc
 
 
-== Screenshots ==
-1. Woo Floating Minicart on collapsed state
-2. Woo Floating Minicart on expanded state
-
 
 == License ==
 
