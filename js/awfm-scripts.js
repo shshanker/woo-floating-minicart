@@ -3,7 +3,7 @@
  *
  * Woocommerce assitive menu.
  *
- * Learn more: https://github.com/Automattic/aankhashop/pull/136
+ * 
  */
 jQuery(document).ready( function($) {
 		

@@ -48,17 +48,25 @@ class Woo_floating_minicart_frontend {
 
 	public function woo_floating_minicart_scripts(){
 
-		wp_register_script( 'woo-floating-minicart-script', plugins_url( 'woo-floating-minicart/js/awfm-scripts.js' ), array('jquery') );
+		// loading WordPress Default jquery.js file
+		wp_enqueue_script('jquery');
+
+		// loading plugin custom js file
+		wp_register_script( 'woo-floating-minicart-script', plugins_url( 'woo-floating-minicart/js/awfm-scripts.js' ), array('jquery'), '1.0.0', true );
 		wp_enqueue_script( 'woo-floating-minicart-script' );
 
+		// loading plugin custom css file
 		wp_register_style( 'woo-floating-minicart-style', plugins_url( 'woo-floating-minicart/css/awfm-style.css' ) );
 		wp_enqueue_style( 'woo-floating-minicart-style' );
 
-		wp_register_script( 'woo-floating-minicart-malihu-script', plugins_url( 'woo-floating-minicart/lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js' ), array('jquery'));		
+		// lodaing third-party js file for custom scroll bar 
+		wp_register_script( 'woo-floating-minicart-malihu-script', plugins_url( 'woo-floating-minicart/lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js' ), array('jquery'), '1.0.0', true );		
 		wp_enqueue_script( 'woo-floating-minicart-malihu-script' );
 
-		wp_register_style( 'woo-floating-minicart-malihu-style', plugins_url( 'woo-floating-minicart/lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css' ) );
+		// lodaing third-party css file for custom scroll bar 
+		wp_register_style( 'woo-floating-minicart-malihu-style', plugins_url( 'woo-floating-minicart/lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.min.css' ) );
 		wp_enqueue_style( 'woo-floating-minicart-malihu-style' );
+	
 	} // end of woo_floating_minicart_scripts
 
 	
