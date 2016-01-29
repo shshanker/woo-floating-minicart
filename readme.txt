@@ -1,19 +1,19 @@
 ﻿=== Woo Floating Minicart ===
-Contributors: Sh Shanker, RiteshShakya
+Contributors: shivashankerbhatta, RiteshShakya
 Donate link: https://github.com/shshanker/woo-floating-minicart
 Tags: woo floating minicart, woocommerce, minicart, cart, floating, woocommerce addons, products
 Requires at least: 3.0.1
 Tested up to: 4.4.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1.01
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Woo Floating Minicart – is the plugin that facilates WooCommerce customer to enable floating mincart menu on your site.
+Woo Floating Minicart – is the plugin that facilates customer to access floating mincart menu on WooCommerce powered site.
 
 
 == Description ==
 
-Woo Floating Minicart – is the plugin that facilates WooCommerce customer to enable floating mincart menu on your site. 
+Woo Floating Minicart – is the plugin that facilates customer to access floating mincart menu on WooCommerce powered site.
 
 Contribution link: https://github.com/shshanker/woo-floating-minicart
 
@@ -23,7 +23,7 @@ Contribution link: https://github.com/shshanker/woo-floating-minicart
 
 * Minicart - enables woocommerce mincart option for customer about their cart items, total price, number of products, tax status, etc.
 
-* Floating - enables floting minicart on fixed left side of your site.
+* Floating - enables floating minicart on fixed left side of your site.
 
 * Responsive - tested on mobile browsers
 
