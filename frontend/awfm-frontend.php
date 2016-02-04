@@ -60,11 +60,11 @@ class Woo_floating_minicart_frontend {
 		wp_enqueue_style( 'woo-floating-minicart-style' );
 
 		// lodaing third-party js file for custom scroll bar 
-		wp_register_script( 'woo-floating-minicart-malihu-script', plugins_url( 'woo-floating-minicart/lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js' ), array('jquery'), '1.0.0', true );		
+		wp_register_script( 'woo-floating-minicart-malihu-script', plugins_url( 'woo-floating-minicart/lib/jquery.mCustomScrollbar.concat.min.js' ), array('jquery'), '1.0.0', true );		
 		wp_enqueue_script( 'woo-floating-minicart-malihu-script' );
 
 		// lodaing third-party css file for custom scroll bar 
-		wp_register_style( 'woo-floating-minicart-malihu-style', plugins_url( 'woo-floating-minicart/lib/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.min.css' ) );
+		wp_register_style( 'woo-floating-minicart-malihu-style', plugins_url( 'woo-floating-minicart/lib/jquery.mCustomScrollbar.min.css' ) );
 		wp_enqueue_style( 'woo-floating-minicart-malihu-style' );
 	
 	} // end of woo_floating_minicart_scripts
