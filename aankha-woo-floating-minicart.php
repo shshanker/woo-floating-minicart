@@ -3,7 +3,7 @@
  * Plugin Name:       Woo Floating Minicart 
  * Plugin URI:        https://github.com/shshanker/woo-floating-minicart
  * Description:       Woo floating minicart plugin for WooCommerce.
- * Version:           1.0.2
+ * Version:           2.0.0
  * Author:            Sh Shanker, RiteshShakya
  * Author URI:        https://github.com/shshanker
  * Text Domain:       woo-floating-minicart
@@ -23,7 +23,7 @@ if ( ! class_exists( 'Woo_Floating_Minicart' ) ) :
 		 *
 		 * @var string
 		 */
-		const VERSION = '1.0.0';
+		const VERSION = '2.0.0';
 
 		/**
 		 * Instance of this class.
@@ -44,7 +44,8 @@ if ( ! class_exists( 'Woo_Floating_Minicart' ) ) :
 				 **/
 				if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 
-			   		include_once 'frontend/awfm-frontend.php';
+			   		include_once 'includes/awfm-frontend.php';
+			   		include_once 'includes/awfm-backend.php';
 					
 					
 				} else {

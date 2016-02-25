@@ -4,16 +4,16 @@ Donate link: https://github.com/shshanker/woo-floating-minicart
 Tags: woo floating minicart, woocommerce, minicart, cart, floating, woocommerce addons, products
 Requires at least: 3.0.1
 Tested up to: 4.4.1
-Stable tag: 1.0.2
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Woo Floating Minicart – is the plugin that facilates customer to access floating mincart menu on WooCommerce powered site.
+Woo Floating Minicart – is the plugin that facilitates customer to access floating minicart menu on WooCommerce powered site.
 
 
 == Description ==
 
-Woo Floating Minicart – is the plugin that facilates customer to access floating mincart menu on WooCommerce powered site.
+Woo Floating Minicart – is the plugin that facilitates customer to access floating minicart menu on WooCommerce powered site.
 
 Contribution link: https://github.com/shshanker/woo-floating-minicart
 
@@ -21,9 +21,13 @@ Contribution link: https://github.com/shshanker/woo-floating-minicart
 
 ### The Plugin Features:
 
-* Minicart - enables woocommerce mincart option for customer about their cart items, total price, number of products, tax status, etc.
+* Minicart - enables Woo-Commerce minicart option for customer about their cart items, total price, number of products, tax status, etc.
 
 * Floating - enables floating minicart on fixed left side of your site.
+
+* Position - now form updated version 2.0.0, you can simply set the position of the floating minicart (right ot left).
+
+* Custom background - this features are aslo featured from version 2.0.0, you can set minicart primary, secondary and button background color.
 
 * Responsive - tested on mobile browsers
 
@@ -34,8 +38,9 @@ Contribution link: https://github.com/shshanker/woo-floating-minicart
 == Installation ==
 * Download to your plugin directory or simply install via WordPress admin interface.
 * Activate.
-* No Admin Setup is needed.
-* Use it.
+* Goto Woo-Commerce general setting admin page, right on the button you'll find "Floating Minicart Setting".
+* Set and update as per you requirement.
+* Float.
 
 == Frequently Asked Questions ==
 Q: What is minicart?
